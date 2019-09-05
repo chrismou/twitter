@@ -45,7 +45,7 @@ class TwitterServiceProvider extends ServiceProvider {
 			$laravelVersion = str_replace('Lumen (', '', $laravelVersion);
 		}
 
-		if ($laravelVersion == 5)
+		if ($laravelVersion == 5 || $laravelVersion == 6)
 		{
 			$this->mergeConfigFrom(__DIR__.'/../../config/config.php', 'ttwitter');
 
